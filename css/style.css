@@ -1,0 +1,477 @@
+:root{
+
+   /* colors */
+   --dark-blue-color: #2C3E50;
+   --green-color: #1ABC9C;
+
+   --border : .3rem solid var(--green-color);
+   --box-shadow: .5rem .5rem 0 rgba(37, 150, 190, .7);
+}
+
+*{
+   font-family: 'Poppins' ,'Bahnschrift', sans-serif;
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   box-sizing: border-box;
+   outline: none;
+   transition: all .2s ease-out;
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-padding-top: 7rem;
+   scroll-behavior: smooth;
+}
+
+
+
+nav{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0 9%;
+   height: 70px;
+   width: 100vw;
+   background-color: var(--dark-blue-color);
+   color: white;
+   gap: 20rem;
+   position: fixed;
+   z-index: 1000;
+}
+
+nav section label{
+   font-size: 2.3rem;
+   font-weight: 500;
+}
+
+nav section ul{
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 3rem;
+   font-size: 1.7rem;
+}
+
+nav section ul li a{
+   text-decoration: none;
+   color: white;
+   padding: 1rem;
+   border: none;
+   border-radius: .7rem;
+}
+
+nav section ul li .active , nav section ul li a:hover{
+   background-color: var(--green-color);
+}
+
+#menuIcon{
+   font-size: 2.5rem;
+   border-radius: .5rem;
+   background-color: #eee;
+   padding: 1rem 1.5rem;
+   color: var(--green-color);
+   cursor: pointer;
+   display: none;
+}
+
+.header{
+   width: 100vw;
+   background-color: var(--green-color);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 2rem;
+   padding: 10rem 9% 2rem;
+   
+}
+
+
+.header .myPic img{
+   height: 200px;
+   width: 200px;
+   border-radius: 50%;
+   border: .5rem solid white;
+}
+
+.header .desc p{
+   text-align: center;
+   font-size: 2.5rem;
+   color: white;
+   font-weight: 400;
+}
+
+.header .desc .name{
+   font-size: 3rem;
+   font-weight: 500;
+   background-color: var(--dark-blue-color);
+   padding: .5rem .1rem;
+   border: none;
+   border-radius: .7rem;
+}
+
+.fa-angles-down{
+   font-size: 4rem;
+   color: var(--dark-blue-color);
+   margin: 1rem auto;
+   text-align: center;
+   animation: Move 2s infinite;
+}
+
+.certificates{
+   padding: 2rem 9%;
+   display: flex;
+   flex-direction: column;
+   /* height: 100vh; */
+}
+
+.title{
+   font-size: 4rem;
+   color: var(--dark-blue-color);
+   text-align: center;
+}
+
+.certificates .box{
+   display: grid;
+   gap: 2rem;
+   grid-template-columns: repeat(auto-fit , minmax(30rem , 1fr));
+   margin-top: 2rem;
+}
+
+.certificates .box .certif{
+   border-radius: .5rem;
+   padding: 2rem;
+   border: var(--border);
+}
+
+.certificates .box .certif .image{
+   height: 20rem;
+   overflow: hidden;
+   border-radius: .5rem;
+}
+
+.certificates .box .certif .image img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+.certificates .box .certif:hover .image img{
+   transform: scale(1.2);
+}
+
+.certificates .box .certif .description{
+   padding-top: 1rem;
+}
+
+.certificates .box .certif .description h2{
+   font-size: 2rem;
+   color: var(--dark-blue-color);
+}
+
+.certificates .box .certif .description p{
+   font-size: 1.5rem;
+   color: gray;
+}
+
+.skills{
+   padding: 2rem 30%;
+   display: flex;
+   flex-direction: column;
+   background-color: var(--green-color);
+}
+
+.skills h1{
+   text-align: center;
+   color: white;
+}
+
+
+.skills .box-container{
+   margin-top: 2rem;
+   display: grid;
+   grid-template-columns: repeat(auto-fit , minmax(20rem , 1fr));
+   gap: 2rem;
+
+}
+
+.skills .box-container .box{
+   background-color: #fff;
+   border-radius: .5rem;
+   border: none;
+   padding: 2.5rem;
+   text-align: center;
+
+}
+
+.skills .box-container .box i{
+   color: var(--dark-blue-color);
+   font-size: 5rem;
+}
+
+.skills .box-container .box h3{
+   color: var(--dark-blue-color);
+   font-size: 2.5rem;
+   padding: .5rem 0;
+}
+
+.skills .box-container .box p{
+   color: gray;
+   font-size: 1.7rem;
+}
+
+
+
+.contact{
+   padding: 2rem 30%;
+   display: flex;
+   flex-direction: column;
+}
+
+.contact form{
+   background-color: var(--dark-blue-color);
+   text-align: center;
+   padding: 2rem;
+   border-radius: 1rem;
+   margin-top: 2rem;
+}
+
+.contact form h3{
+   color: var(--blue-color);
+   padding-bottom: 1rem;
+   font-size: 3rem;
+}
+
+.contact form .box{
+   width: 100%;
+   margin: .7rem 0;
+   border-radius: .5rem;
+   border: .1rem solid rgba(255, 255, 255, .5);
+   outline: none;
+   font-size: 1.6rem;
+   color: var(--dark-blue-color);
+   text-transform: none;
+   padding: 1rem;
+   font-size: 1.7rem;
+   font-weight: 500;
+}
+.contact form textarea{
+   resize: none;
+}
+
+
+.contact form .btn{
+   padding: 1rem 4rem;
+   background-color: var(--green-color);
+   border-radius: .5rem;
+   border: none;
+   font-size: 1.7rem;
+   color: white;
+   cursor: pointer;
+}
+
+
+.about{
+   padding: 2rem 20%;
+   margin-top: 2rem;
+   background-color: var(--green-color);
+}
+
+.about h1{
+   color: white;
+}
+
+.about .row{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10rem;
+   margin-top: 2rem;
+   flex-wrap: wrap;
+}
+
+.about .image img{
+   width: 250px;
+   animation: Move 4s infinite;
+   border: .5rem solid white;
+   border-radius: 1rem;
+}
+
+.about .content{
+   flex: 1 1 45rem;
+}
+
+.about .content h3{
+   color: var(--dark-blue-color);
+   font-size: 4rem;
+   line-height: 1.2;
+   padding-bottom: .5rem;
+}
+
+.about .content p{
+   color: white;
+   padding: 1rem 0;
+   font-size: 2rem;
+   line-height: 1.8;
+}
+
+
+.footer{
+   background-color: var(--dark-blue-color);
+   color: white;
+   padding: 2rem 9%;
+   margin-top: 10rem;
+}
+
+.footer .box-container{
+   display: grid;
+   gap: 2rem;
+   grid-template-columns: repeat(auto-fit , minmax(22rem , 1fr));
+}
+
+.footer .box-container .box h3{
+   color: var(--blue-color);
+   font-size: 2.5rem;
+   padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+   display: block;
+   font-size: 1.5rem;
+   color: var(--gray-color);
+   padding: 1rem 0;
+}
+
+.footer .box-container .box a i{
+   padding-right: .7rem;
+   color: var(--green-color);
+   font-size: 1.7rem;
+}
+
+.footer .box-container .box a:hover i{
+   padding-right: 2rem;
+}
+
+.footer .credit{
+   text-align: center;
+   padding: 1rem;
+   padding-top: 2rem;
+   font-size: 2rem;
+   margin-top: 2rem;
+   text-transform: none;
+}
+
+.footer .credit span{
+   color: var(--green-color);
+}
+
+
+.fa-angles-up{
+   font-size: 4rem;
+   color: white;
+   background-color: var(--green-color);
+   border: none;
+   border-radius: .5rem;
+   padding: 1rem 1.5rem;
+   animation: Move 2s infinite;
+   position: fixed;
+   right: 2rem;
+   bottom: 2rem;
+}
+
+
+
+
+
+
+
+/* key frames */
+@keyframes Move {
+   0% { transform: translate(0 ,0);}
+   20% { transform: translate(0 ,-.6rem);}
+   40% { transform: translate(0 ,.6rem);}
+   60% { transform: translate(0 ,-.6rem);}
+   80% { transform: translate(0 ,.6rem);}
+   100% { transform: translate(0 ,0);}
+}
+
+
+
+
+
+/* media queries */
+
+@media (max-width: 991px){
+
+   html{
+      font-size: 55%;
+   }
+
+   nav{
+      padding: 0 2rem;
+   }
+
+   .certificates .about ,.skills , .contact ,.footer{
+      padding: 2rem;
+   }
+
+}
+
+@media (max-width: 768px){
+
+   nav{
+      padding: 0 10rem;
+   }
+
+   #menuIcon{
+      display: initial;
+   }
+
+   nav .navbar{
+      position: absolute;
+      top: 100%; right: 2rem;
+      border-radius: .5rem;
+      background-color: #fff;
+      width: 30rem;
+      transform: scale(0);
+      opacity: 0;
+      transform-origin: top right;
+      transition: none;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem;
+      gap: 3rem;
+   }
+
+   nav .on{
+      transform: scale(1);
+      opacity: 1;
+      transition: .2s ease-out;
+   }
+
+   nav .navbar li a{
+      color: var(--dark-blue-color);
+   }
+
+   nav section ul li .active , nav section ul li a:hover{
+      background-color: var(--green-color);
+      color: white;
+   }
+
+   .about .row{
+      gap: 2rem;
+   }
+   .about .content{
+      text-align: center;
+   }
+}
+
+@media (max-width: 450px){
+
+   html{
+      font-size: 50%;
+   }
+}
