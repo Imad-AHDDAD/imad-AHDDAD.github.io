@@ -423,7 +423,7 @@ nav section ul li .active , nav section ul li a:hover{
 @media (max-width: 768px){
 
    nav{
-      padding: 0 10rem;
+      padding: 0 5rem;
    }
 
    #menuIcon{
