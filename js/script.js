@@ -8,8 +8,7 @@ window.addEventListener("DOMContentLoaded",function(){
    menu.addEventListener("click",()=>{
    menu.classList.toggle('fa-xmark');
    nav.classList.toggle('on');
+   });
+
 });
-})
-
-
 

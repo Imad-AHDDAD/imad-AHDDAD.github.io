@@ -9,8 +9,11 @@
    <link rel="stylesheet" href="css/style.css">
    <!-- fontawesome link -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <!-- smtp script  -->
+   <script src="https://smtpjs.com/v3/smtp.js"></script> 
    <!-- my script -->
    <script src="js/script.js"></script>
+   
 
 </head>
 <body id="home">
@@ -158,11 +161,11 @@
 
       <h1 class="title"> Contact </h1>
 
-      <form action="">
-         <input type="text" name="name" placeholder="your name" class="box">
-         <input type="email" name="email" placeholder="your email" class="box">
-         <textarea cols="10" name="msg" rows="5" placeholder="Your message" class="box"></textarea>
-         <input type="submit" value="Send" class="btn">
+      <form method="Post">
+         <input type="text" name="name" id="name" placeholder="your name" class="box">
+         <input type="email" name="email" required id="email" placeholder="your email" class="box">
+         <textarea cols="10" name="msg" rows="5" id="msg" required placeholder="Your message" class="box"></textarea>
+         <input type="submit" value="Send" id="sendEmail" class="btn">
       </form>
 
    </section>
