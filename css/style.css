@@ -29,14 +29,13 @@ html{
 
 nav{
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
    align-items: center;
    padding: 0 9%;
    height: 70px;
    width: 100vw;
    background-color: var(--dark-blue-color);
    color: white;
-   gap: 20rem;
    position: fixed;
    z-index: 1000;
 }
@@ -51,7 +50,7 @@ nav section ul{
    display: flex;
    justify-content: space-between;
    align-items: center;
-   gap: 2rem;
+   gap: 1rem;
    font-size: 1.7rem;
 }
 
