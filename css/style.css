@@ -473,6 +473,7 @@ nav section ul li .active , nav section ul li a:hover{
 @media (max-width: 768px){
 
    nav{
+      padding: 0 5rem;
       gap: 5rem;
    }
 
@@ -514,7 +515,7 @@ nav section ul li .active , nav section ul li a:hover{
    .about .row{
       gap: 2rem;
    }
-   .about .content{
+   .about .content h3{
       text-align: center;
    }
 }
