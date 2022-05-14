@@ -51,7 +51,7 @@ nav section ul{
    display: flex;
    justify-content: space-between;
    align-items: center;
-   gap: 3rem;
+   gap: 2rem;
    font-size: 1.7rem;
 }
 
@@ -462,6 +462,7 @@ nav section ul li .active , nav section ul li a:hover{
 
    nav{
       padding: 0 2rem;
+      gap: 5rem;
    }
 
    .certificates .about ,.skills , .contact ,.footer{
