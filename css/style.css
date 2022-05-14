@@ -428,7 +428,7 @@ nav section ul li .active , nav section ul li a:hover{
    animation: Move 2s infinite;
    position: fixed;
    right: 2rem;
-   bottom: 2rem;
+   bottom: 8rem;
 }
 
 
