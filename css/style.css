@@ -1,15 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 :root{
-
-   /* colors */
    --dark-blue-color: #2C3E50;
    --green-color: #1ABC9C;
-
    --border : .3rem solid var(--green-color);
    --box-shadow: .5rem .5rem 0 rgba(37, 150, 190, .7);
 }
 
 *{
-   font-family: 'Poppins' ,'Bahnschrift', sans-serif;
+   font-family: 'Montserrat', sans-serif;
    margin: 0;
    padding: 0;
    text-decoration: none;
@@ -24,8 +22,6 @@ html{
    scroll-padding-top: 7rem;
    scroll-behavior: smooth;
 }
-
-
 
 nav{
    display: flex;
@@ -88,17 +84,25 @@ nav section ul li .active , nav section ul li a:hover{
    
 }
 
-
-.header .myPic img{
+.header .myPic{
    height: 200px;
    width: 200px;
    border-radius: 50%;
    border: .5rem solid white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+}
+
+.header .myPic img{
+   width: 100%;
 }
 
 .header .desc p{
    text-align: center;
    font-size: 2.5rem;
+   margin-top: 1rem;
    color: white;
    font-weight: 400;
 }
@@ -107,7 +111,7 @@ nav section ul li .active , nav section ul li a:hover{
    font-size: 3rem;
    font-weight: 500;
    background-color: var(--dark-blue-color);
-   padding: .5rem .1rem;
+   padding: 1.5rem 0rem;
    border: none;
    border-radius: .7rem;
 }
